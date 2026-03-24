@@ -6,6 +6,7 @@ import com.squareup.anvil.annotations.MergeComponent
 import com.squareup.anvil.annotations.optional.SingleIn
 import dagger.BindsInstance
 import ink.trmnl.android.TrmnlDisplayMirrorApp
+import ink.trmnl.android.work.TrmnlRefreshForegroundService
 import javax.inject.Provider
 
 @MergeComponent(
@@ -20,6 +21,11 @@ interface AppComponent {
      * Injects dependencies into [TrmnlDisplayMirrorApp].
      */
     fun inject(app: TrmnlDisplayMirrorApp)
+
+    /**
+     * Injects dependencies into [TrmnlRefreshForegroundService].
+     */
+    fun inject(service: TrmnlRefreshForegroundService)
 
     @MergeComponent.Factory
     interface Factory {

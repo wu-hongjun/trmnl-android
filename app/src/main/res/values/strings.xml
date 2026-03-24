@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TRMNL</string>
+    <string name="notification_channel_name">Display Refresh</string>
+    <string name="notification_channel_description">Keeps the TRMNL display image up to date</string>
+    <string name="notification_title">TRMNL</string>
+    <string name="notification_text">Display refresh active</string>
 </resources>
